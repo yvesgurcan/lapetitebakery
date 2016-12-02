@@ -1,4 +1,4 @@
-# lpc-codeigniter
+# lpb-codeigniter
 This is the CodeIgniter version of my bakery software, La Petite Bakery.
 
 # Database
