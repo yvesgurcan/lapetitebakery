@@ -8,7 +8,7 @@
                 <div class="col-sm-12">
                         <div class=product_options>
                             <div><b><?=$product_count?></b></div>
-                            <div><b><?=$category_count?></b><span class=category_names hidden><?=$product_category_names?></span></div>
+                            <div><b><?=$category_count?></b><span class=category_names hidden><?=$category_names?></span></div>
                             <div class=product_option_right>
                                 <button id=expand_toggle script_action=show>expand all</button>
                             </div>

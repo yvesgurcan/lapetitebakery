@@ -34,7 +34,7 @@
                 </div>
                 <div class="col-sm-12">
                     <div><b><?=$product_count?></b></div>
-                    <div><b><?=$category_count?></b><span class=category_names hidden><?=$product_category_names?></span></div>
+                    <div><b><?=$category_count?></b><span class=category_names hidden><?=$category_names?></span></div>
                     <!-- TODO: provide a summary of the products offered by the business -->
                     <?=$work_in_progress_section?>
                 </div>
