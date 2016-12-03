@@ -46,7 +46,7 @@ class Query extends CI_Model {
 
     public function get_number_of_categories() {
         $user = $_SESSION['user'];
-        $number_of_categories = 'Table products_' . $user . ' does not exist.';
+        $number_of_categories = '';
         if ($this->db->table_exists('products_' . $user)) {
             $query = $this->db->query('SELECT COUNT(DISTINCT category) FROM products_' . $user);
             $category_count = $query->result_array()[0]['COUNT(DISTINCT category)'];
@@ -58,13 +58,17 @@ class Query extends CI_Model {
     }
 
     public function get_names_of_categories() {
-        $user = $_SESSION['user'];
-        $name_of_categories = 'Table products_' . $user . ' does not exist.';
+        /*$user = $_SESSION['user'];
+        $name_of_categories = '';
         if ($this->db->table_exists('products_' . $user)) {
             $query = $this->db->query('SELECT DISTINCT category FROM products_' . $user);
-            $name_of_categories = $query->result_array()[0];
+            $name_of_categories_array = $query->result_array();
+	    foreach ($name_of_categories_array as $category) {
+                    $name_of_categories .= $category . ', ';
+                }
+	    $name_of_categories = ' (' . rtrim($name_of_categories,', ') . ')'; // trim the comma on the last occurrence
         }
-        return $name_of_categories;
+        return $name_of_categories;*/
     }
     
     public function get_products() {
