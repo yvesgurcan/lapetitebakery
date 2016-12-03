@@ -100,7 +100,7 @@
         <!-- top navbar spacer -->
         <div id="upper-navbar-spacer"></div>
 <?php
-    if ($current_page != "index") {
+    if ($current_page != "index" && $current_page != "setup") {
 ?>
         <!-- left navbar -->
         <nav class="navbar navbar-inverse navbar-fixed-left">
